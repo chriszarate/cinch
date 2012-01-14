@@ -1,0 +1,54 @@
+<h1>Tips and Tricks</h1>
+
+<h3>Template variables</h3>
+
+<p>There are six template variables:</p>
+
+<ul>
+	<li>&lt;!-- TITLE --&gt;</li>
+	<li>&lt;!-- TITLE_NO_TAGS --&gt;</li>
+	<li>&lt;!-- CONTENT --&gt;</li>
+	<li>&lt;!-- CUSTOM_HEAD --&gt;</li>
+	<li>&lt;!-- CREATION_DATE --&gt;</li>
+	<li>&lt;!-- MODIFIED_DATE --&gt;</li>
+</ul>
+
+
+<h4>Title</h4>
+
+<p>The first occurence of &lt;h1&gt; in a page will be <strong>removed</strong> and provided to your page template as the “title” variable. If no &lt;h1&gt; is found, the basename of the page will be provided instead.</p>
+<p>The “title_no_tags” variable holds the same string with HTML tags removed. This is especially useful for populating your template’s &lt;title&gt; tag.</p>
+
+<h4>Content</h4>
+
+<p>The content of a page or output of a PHP script is provided to the page template as the “content” variable.</p>
+
+
+<h4>Custom head</h4>
+
+<p>If you have additions to the &lt;head&gt; element for a single page, put them in a sidecar file with a “.head” extension:</p>
+
+<blockquote>
+	<code>
+		getting_started.txt
+		<br>
+		getting_started.head
+	</code>
+</blockquote>
+
+<p>The contents of this sidecar file will be provided to the page template as the “custom head” variable.</p>
+
+
+<h4>Created and modified dates</h4>
+
+<p>These variables provide the creation and modified dates of the source file.</p>
+
+
+<h3>Caching</h3>
+
+<p>Text and HTML pages are cached. PHP output is never cached. When editing existing pages manually, remember to delete the corresponding cache file in the “cache” directory.</p>
+
+
+<h3>Troubleshooting</h3>
+
+<p>If you are running PHP in <code>safe_mode</code> you may need to set the <code>uid</code> of <code>page.php</code> to match the <code>uid</code> of your PHP process.</p>

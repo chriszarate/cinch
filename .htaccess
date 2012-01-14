@@ -1,0 +1,22 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteCond $0 !^page\.php$
+RewriteCond $0 !^files/
+
+RewriteCond %{DOCUMENT_ROOT}/cache/$0.html -f
+RewriteRule .+ cache/$0.html [L]
+
+RewriteCond $0 !^files/
+
+RewriteCond txt .+
+RewriteCond %{DOCUMENT_ROOT}/content/$0.%0 -f [OR]
+
+RewriteCond html .+
+RewriteCond %{DOCUMENT_ROOT}/content/$0.%0 -f [OR]
+
+RewriteCond php .+
+RewriteCond %{DOCUMENT_ROOT}/content/$0.%0 -f
+
+RewriteRule .+ page.php?page=$0&type=%0 [L,QSA]

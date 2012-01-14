@@ -1,0 +1,23 @@
+# Getting Started
+
+### Setup
+
+1. Grant PHP write access to the "cache" directory.
+
+2. Review ".htaccess". It may be necessary to make changes.
+
+
+### Template
+
+The file "index.html" is not a template. It is your home page. There is only one template: "page.html".
+
+
+### Pages
+
+Create a new page by creating a file in the "content" directory.
+
+* `.txt` files will be formatted by [Markdown](http://daringfireball.net/projects/markdown/) and [Smartypants](http://daringfireball.net/projects/smartypants/)
+* `.html` files will be unaltered
+* `.php` files will be included as PHP code
+
+Use the basename of the file (e.g., "[tips\_and\_tricks](tips_and_tricks)") to access your page.

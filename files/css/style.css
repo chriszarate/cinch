@@ -1,0 +1,27 @@
+body {
+	
+	width:   35em;
+	margin:  3em;
+
+	background: #fff;
+
+	font-family: Helvetica, sans-serif;
+	font-size:   1.5em;
+	line-height: 1.5em;
+
+}
+
+h1, h2, h3, h4 { margin: 2em 0 1em 0; }
+
+a { color: #33f; }
+
+div.column {
+	float: left;
+	padding-right: 3em;
+}
+
+p.summary {
+	clear: left;
+	padding-top: 2em;
+	font-weight: bold;
+}
