@@ -37,8 +37,6 @@ If you have additions to the `<head>` element for a single page, put them in a s
 
 ### Installation
 
-**[Download “Cinch”](https://github.com/chriszarate/cinch)** at Github.
-
 1. Grant PHP write access to the `cache` directory.
 2. Review `.htaccess`. It may be necessary to make changes.
 3. Load your home page and follow the links to the documentation.
@@ -46,6 +44,7 @@ If you have additions to the `<head>` element for a single page, put them in a s
 ### Future plans
 
 * Syndication support, maybe
+* Probably nothing
 
 ### License
 
