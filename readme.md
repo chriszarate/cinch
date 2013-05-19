@@ -1,6 +1,6 @@
 # Cinch
 
-Use Cinch to make a simple Web site, like this one. It expects you to know what you are doing a little bit.
+Use Cinch to make a simple Web site, like [this one](http://chris.zarate.org). It expects you to know what you are doing a little bit.
 
 ### Key features
 
