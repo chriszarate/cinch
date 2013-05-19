@@ -28,7 +28,7 @@ Create a new page by creating a file in the `content` directory.
 * `.html` files will be unaltered
 * `.php` files will be included as PHP code
 
-Use the basename of the file (e.g., "[cinch](cinch)") to access your page.
+Use the basename of the file (e.g., "cinch" for "cinch.txt") to access your page.
 
 If you have additions to the `<head>` element for a single page, put them in a sidecar file with a `.head` extension:
 
@@ -37,7 +37,7 @@ If you have additions to the `<head>` element for a single page, put them in a s
 
 ### Installation
 
-**[Download “Cinch”](https://github.com/chriszarate/Cinch)** at Github.
+**[Download “Cinch”](https://github.com/chriszarate/cinch)** at Github.
 
 1. Grant PHP write access to the `cache` directory.
 2. Review `.htaccess`. It may be necessary to make changes.
